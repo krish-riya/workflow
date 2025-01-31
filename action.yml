@@ -1,0 +1,16 @@
+name: My Action with Email  # Give your action a descriptive name
+
+on:
+  push: # This triggers the action on every push. You can adjust the trigger as needed (e.g., pull_request, schedule, etc.)
+    branches: [ main ] # Specify the branch to trigger on (e.g., main, develop)
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # Choose the runner environment (e.g., ubuntu-latest, windows-latest, macos-latest)
+    steps:
+      - name: krishnapriya.rajasubramani@straive.com  # Step name containing your email
+        run: echo "Hello, world!"  # The command to execute in this step.  You can replace this with any other command.
+      - name: Another Step
+        run: |
+          echo "This is another step."
+          echo "You can run multi-line scripts here."
